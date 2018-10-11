@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XMLScript Version="2.0">
+<Command Name="Job1">
+<Print>
+<Format>D:\ProgramData\HighJump\WA\Labels\hsn ship.btw</Format>
+<PrintSetup>
+<IdenticalCopiesOfLabel>1</IdenticalCopiesOfLabel>
+<Printer>TESTLBL1</Printer>
+</PrintSetup>
+<RecordSet Name="Ship UCC flat file layout" Type="btTextFile">
+<Delimitation>btDelimCustom</Delimitation>
+<FieldDelimiter>|</FieldDelimiter>
+<UseFieldNamesFromFirstRecord>true</UseFieldNamesFromFirstRecord>
+<TextData>
+<![CDATA[From:name|From:addressline1|From:addressline2|From:city|From:state|From:zip|To:NAME|To:STORENUMBER|To:addressline1|To:addressline2|To:city|To:state|To:zip|To:Country|Carrier:name|Carrier:Service|Carrier:pro#|Carrier:b/l#|Ship Date|CustomerPONumber|DeptNum|Size|Musical Size|Style|Color|SKU|DCNnumber|VendorNumber|Carton x of y|CaseQty|Musical Qty|UPC|Store Number|ucc/sscc|markforname|markforaddressline1|markforaddressline2|markforcity|markforstate|markforzip|pick list number|Order Number|Tracking #]
+FitFlop USA LLC|C/O ODW Logistics|1 Collective Way STE B|Brookville|OH|99999|hsn ship.btw|99999|Addr Line 1|Addr Line 2|Columbus|OH|48917|US|USPS|FIRST|PRO1234|BL1234|Ship Date|PO12345|53|M|LARGE|STYLE|BLACK|677338876135|DC12345|V123456|1 OF 10|12|12|677338876135|99999|00000025410000004742|markforname|markforaddressline1|markforaddressline2|markforcity|markforstate|markforzip|PKNUM|ORDNUM|9341989698090036942201
+]]>
+</TextData>
+</RecordSet>
+</Print>
+</Command>
+</XMLScript>
